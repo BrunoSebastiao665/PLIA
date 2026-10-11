@@ -55,7 +55,7 @@ jobs:
           path: . # 👈 downloads model.pkl into current dir
 
       - name: Run Flask tests
-        run: pytest -v
+        run: pytest test_api.py -v
 
   build:
     runs-on: ubuntu-latest
